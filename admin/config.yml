@@ -33,3 +33,18 @@ collections:
       - { label: "Navigation Title", name: "navtitle", widget: "string" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "nav" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Gallery"
+    folder: gallery
+    name: "gallery"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Cover image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Images"
+        widget: "list"
+        name: "images"
+        fields:
+          - { label: "Title", name: "title", widget: "string" } 
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Description", name: "description", widget: "markdown" }
